@@ -4,85 +4,71 @@
 <head>
   <meta charset="UTF-8">
   <title>Responsive Columns</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <div class = "container">
-      <div class = "row">
-        <div class = "col-9">
-  <a href="index.html" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Latitude</a>
-</div>
-<div class = "col-3">
-  <ul class="nav">
-    <li class="nav-item">
-        <a class = "nav-link active" href="plot.html">Plot</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="comparison.html">Comparison</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="data.html">Data</a>
-    </li>
-  </ul>
-</div>
-</div>
-</div>
+
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-9">
+        <a href="index.html" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Latitude</a>
+      </div>
+      <div class="col-3">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="plot.html">Plot</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </head>
 
 <body>
-  <div class = "container">
+  <div class="container">
     <div class="row">
       <!--First Column in this Row-->
       <div class="col-md-7">
         <div class="box">
           <h1><b>Summary: Latitude vs. X</b></h1>
-          <img src="Fig1.png" width="200" height="250" alt="Latitude v Temp"/>
-          <p>The purpose of this project was to analyze how weather changes when closer to the equator. To do this, data was 
-            pulled from the OpenWeatherMap API to collect data from over 500 randomly selected cities. </br></br></br>
-            After creating the dataset, Matplotlib was used to plot various aspects of weather vs latitude. Factors examined
-              included: temperature, cloudiness, wind speed, and humidity. This site provides the source data, visualizations, and 
-              explanations and descriptions of any trends.
-        </p>
+          <hr/>
+          <img src="Fig1.png" width="400" height="400" alt="Latitude v Temp" align=left />
+          <p>The purpose of this project was to demonstrate mastery of API's and Matplot lib. This was done by 
+            analyzing how weather changes when closer to the equator. For the analysis, data was 
+            was pulled from the OpenWeatherMap API to collect data from over 500 randomly selected cities.<br/></p>
+          <p>After creating the dataset, Matplotlib was used to plot various aspects of weather vs latitude. Factors
+            examined included: temperature, humidity, windspeed, and cloudiness. This site provides the source data,
+            visualizations, and explanations and descriptions of any trends that occured in this analysis.
+          </p>
         </div>
       </div>
-      <div class = "col-md-5">
-        <div class = "box">
+      <div class="col-md-5">
+        <div class="box">
           <h2><b> Visualizations</b></h2>
-                <a href = "vis1.html"> <img src="Fig1.png" width="175" height="200 alt="Latitude v Temp"></a>
-                <a href = "vis2.html"><img src="Fig2.png" width="175" height="200" alt="Latitude v Humidity"></a>
-                <a href = "vis3.html"><img src="Fig3.png" width="175" height="200" alt="Latitude v Cloudiness"></a>
-                <a href = "vis4.html"><img src="Fig4.png" width="175" height="200" alt="Latitude v Windspeed"></a>
+          <hr/>
+          <a href="vis1.html"> <img src="Fig1.png" width="200" height="200" alt="Latitude v Temp" ></a>
+          <a href="vis2.html"><img src="Fig2.png" width="200" height="200" alt="Latitude v Humidity" ></a>
+          <a href="vis3.html"><img src="Fig3.png" width="200" height="200" alt="Latitude v Cloudiness" ></a>
+          <a href="vis4.html"><img src="Fig4.png" width="200" height="200" alt="Latitude v Windspeed" ></a>
         </div>
       </div>
-  </div>
-
-     <!-- trying with rows probably not it -->
-       <!-- <div class="container">
-        <div class="row">
-            <div class= "col-sm-9">
-                <p1><b>Summary: Latitude vs. X</b></p1> 
-            </div>
-            <div class= "col-sm-3">
-            <p2><b> Visualizations</b></p2>
-            </div>
-        </div>
-        <div class="row">
-                <div class = "col-sm-3">
-                    <img src="Fig1.png" width="200" height="250" alt="Latitude v Temp"/>
-                </div>
-                <div class = "col-sm-6">
-            <p>The purpose of this project was to analyze how weather changes when closer to the equator. To do this, data was 
-                pulled from the OpenWeatherMap API to collect data from over 500 randomly selected cities. </br></br></br>
-                After creating the dataset, Matplotlib was used to plot various aspects of weather vs latitude. Factors examined
-                  included: temperature, cloudiness, wind speed, and humidity. This site provides the source data, visualizations, and 
-                  explanations and descriptions of any trends.
-            </p>
-                </div>
-            <div class="col-sm-3">
-                <img src="Fig1.png" width="125" height="150" alt="Latitude v Temp"/>
-                <img src="Fig2.png" width="125" height="150" alt="Latitude v Humidity"/>
-                <img src="Fig3.png" width="125" height="150" alt="Latitude v Cloudiness"/>
-                <img src="Fig4.png" width="125" height="150" alt="Latitude v Windspeed"/>
-            </div>
-        </div> -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
 </body>
+
 </html>
