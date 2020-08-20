@@ -1,30 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Responsive Columns</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <div class = "container">
-        <div class = "row">
-          <div class = "col-9">
-    <a href="index.html" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Latitude</a>
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Columns</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <div class="container">
+    <div class="row">
+      <div class="col-9">
+        <a href="index.html" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Latitude</a>
+      </div>
+      <div class="col-3">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="plot.html">Plot</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
-  <div class = "col-3">
-    <ul class="nav">
-      <li class="nav-item">
-          <a class = "nav-link active" href="plot.html">Plot</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="comparison.html">Comparison</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="data.html">Data</a>
-      </li>
-    </ul>
-  </div>
-  </div>
-  </div>
-  </head>
-  
+</head>
+
+<body>
+  <h1><b>Comparison: Latitude vs X</b></h1>
+  <p>Click on any plot to get an in-depth analysis.</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="box">
+          <h2>vs Max Temperature</h2>
+          <a href="temp.html"> <img src="temp.png" width="400" height="300" alt="Latitude v Temp"></a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="box">
+          <h2>vs Humidity</h2>
+          <a href="humid.html"> <img src="humid.png" width="400" height="300" alt="Latitude v Humidity"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="box">
+          <h2>vs Cloudiness</h2>
+          <a href="cloudiness.html"> <img src="cloudiness.png" width="400" height="300" alt="Latitude v Cloudiness"></a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="box">
+          <h2>vs Wind Speed</h2>
+          <a href="wind_speed.html"> <img src="wind_speed.png" width="400" height="300" alt="Latitude v Wind Speed"></a>
+        </div>
+      </div>
+    </div>
+
+
+</body>
+</html>
