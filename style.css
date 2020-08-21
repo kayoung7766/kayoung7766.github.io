@@ -34,3 +34,10 @@ p{ padding: 0 15px 0 15px;}
     margin-left: auto;
     margin-right: auto;
   }
+
+  h3 {color: #07dbce;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 36pt;
+    padding: 10px;
+    background-color: white;
+    text-align: center;}
