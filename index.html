@@ -12,13 +12,20 @@
   <div class="container">
     <div class="row">
       <div class="col-9">
-        <a href="index.html" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Latitude</a>
+        <a href="index.html" class="btn" role="button" aria-pressed="true">Latitude</a>
       </div>
       <div class="col-3">
         <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="plot.html">Plot</a>
-          </li>
+          <li class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plot
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="temp.html">Max Temperature</a>
+              <a class="dropdown-item" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+            </div>
           <li class="nav-item">
             <a class="nav-link" href="comparison.html">Comparison</a>
           </li>
@@ -55,7 +62,7 @@
           <a href="temp.html"> <img src="temp.png" width="200" height="150" alt="Latitude v Temp" ></a>
           <a href="humidity.html"><img src="humid.png" width="200" height="150" alt="Latitude v Humidity" ></a>
           <a href="cloudiness.html"><img src="cloudiness.png" width="200" height="150" alt="Latitude v Cloudiness" ></a>
-          <a href="windspeed.html"><img src="wind_speed.png" width="200" height="150" alt="Latitude v Windspeed" ></a>
+          <a href="wind_speed.html"><img src="wind_speed.png" width="200" height="150" alt="Latitude v Windspeed" ></a>
         </div>
       </div>
     </div>
