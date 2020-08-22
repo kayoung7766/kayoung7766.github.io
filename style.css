@@ -51,3 +51,22 @@ head {
 }
 
 .btn {background-color:  #07dbce}
+
+@media(max-width: 990px){
+    button{
+        margin-right: 30px;
+    }
+    button:focus {
+        outline: 1px dotted;
+        outline: 5px auto;
+    }
+}
+
+.navtoo {display: none}
+
+@media screen and (max-width: 600px) {
+    .nav {display: none}
+
+    .navtoo {display: block}
+}
+
